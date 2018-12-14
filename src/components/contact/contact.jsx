@@ -79,46 +79,49 @@ class ContactComponent extends Component {
 			<div className="contact">
 				<p className="headline">Contact</p>
 				<TextField
-					hintText="Name"
-					floatingLabelText="Name"
+					hinttext="Name"
+					label="Name"
+					floatinglabeltext="Name"
 					style={{
 						width: '100%'
 					}}
-					floatingLabelFocusStyle={{
+					floatinglabelfocusstyle={{
 						color: '#A80202'
 					}}
-					underlineFocusStyle={{
+					underlinefocusstyle={{
 						borderColor: '#A80202'
 					}}
 					onChange={(e) => this.onUpdateField('name', e)}
 				/>
 				<TextField
-					hintText="E-mail"
-					floatingLabelText="E-mail"
+					hinttext="E-mail"
+					label="Email"
+					floatinglabeltext="E-mail"
 					type="email"
 					style={{
 						width: '100%'
 					}}
-					floatingLabelFocusStyle={{
+					floatinglabelfocusstyle={{
 						color: '#A80202'
 					}}
-					underlineFocusStyle={{
+					underlinefocusstyle={{
 						borderColor: '#A80202'
 					}}
 					onChange={(e) => this.onUpdateField('email', e)}
 				/>
 				<TextField
-					hintText="Your message"
-					floatingLabelText="Your message"
+					hinttext="Your message"
+					label="Your message"
+					floatinglabeltext="Your message"
 					style={{
 						width: '100%'
 					}}
-					multiLine={true}
+					multiline={true}
 					rows={2}
-					floatingLabelFocusStyle={{
+					floatinglabelfocusstyle={{
 						color: '#A80202'
 					}}
-					underlineFocusStyle={{
+					underlinefocusstyle={{
 						borderColor: '#A80202'
 					}}
 					onChange={(e) => this.onUpdateField('message', e)}
@@ -130,11 +133,13 @@ class ContactComponent extends Component {
 				{this.state.loading && <LinearProgress mode="indeterminate" color="#A80202" />}
 				<div className="contact-btn">
 					<Button
+						variant="contained"
 						label="Send message"
+						href="#contained-buttons"
 						onClick={this.onSubmit.bind(this)}
-						backgroundColor="#A80202"
-						labelColor="#ffffff"
-					/>
+					>
+					Send message
+					</Button>
 				</div>
 			</div>
 		);

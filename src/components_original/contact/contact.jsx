@@ -83,25 +83,25 @@ class ContactComponent extends Component {
       <div className="contact">
         <p className="headline">Contact</p>
         <p>Are you nosy? Then write me a message:</p>
-          <TextField hintText="Name" floatingLabelText="Name" style={{
+          <TextField hinttext="Name" floatinglabeltext="Name" style={{
             "width": "100%"
-          }} floatingLabelFocusStyle={{
+          }} floatinglabelfocusstyle={{
             "color": "#A80202"
-          }} underlineFocusStyle={{
+          }} underlinefocusstyle={{
             "borderColor": "#A80202"
           }} onChange={e => this.onUpdateField('name', e)}/>
-          <TextField hintText="E-mail" floatingLabelText="E-mail" type="email" style={{
+          <TextField hinttext="E-mail" floatinglabeltext="E-mail" type="email" style={{
             "width": "100%"
-          }} floatingLabelFocusStyle={{
+          }} floatinglabelfocusstyle={{
             "color": "#A80202"
-          }} underlineFocusStyle={{
+          }} underlinefocusstyle={{
             "borderColor": "#A80202"
           }} onChange={e => this.onUpdateField('email', e)}/>
-          <TextField hintText="Your message" floatingLabelText="Your message" style={{
+          <TextField hinttext="Your message" floatinglabeltext="Your message" style={{
             "width": "100%"
-          }} multiLine={true} rows={2} floatingLabelFocusStyle={{
+          }} multiline={true} rows={2} floatinglabelfocusstyle={{
             "color": "#A80202"
-          }} underlineFocusStyle={{
+          }} underlinefocusstyle={{
             "borderColor": "#A80202"
           }} onChange={e => this.onUpdateField('message', e)}/> {this.state.errorMessage != null && <p className="error-message message">{this.state.errorMessage}</p>
           }
@@ -114,7 +114,7 @@ class ContactComponent extends Component {
           }
 
           <div className="contact-btn">
-            <RaisedButton label="Send message" onClick={this.onSubmit.bind(this)} backgroundColor="#A80202" labelColor="#ffffff"/>
+            <RaisedButton label="Send message" onClick={this.onSubmit.bind(this)} backgroundcolor="#A80202" labelcolor="#ffffff"/>
           </div>
       </div>
     );

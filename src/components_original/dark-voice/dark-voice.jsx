@@ -43,12 +43,12 @@ class DarkVoiceComponent extends Component {
               </p>
               <div className="microphone-action">
                 { !this.state.sound &&
-                  <FloatingActionButton backgroundColor="#A80202" onTouchTap={this.enableSound.bind(this)}>
+                  <FloatingActionButton backgroundcolor="#A80202" onTouchTap={this.enableSound.bind(this)}>
                     <MicrophoneIcon />
                   </FloatingActionButton>
                 }
                 { this.state.sound &&
-                  <FloatingActionButton backgroundColor="#A80202" onTouchTap={this.disableSound.bind(this)}>
+                  <FloatingActionButton backgroundcolor="#A80202" onTouchTap={this.disableSound.bind(this)}>
                     <MicrophoneOffIcon />
                   </FloatingActionButton>
                 }

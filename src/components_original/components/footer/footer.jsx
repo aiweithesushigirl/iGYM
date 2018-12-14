@@ -32,7 +32,7 @@ class FooterComponent extends Component {
             LinkedIn
           </a>
         </div>
-        <FlatButton labelStyle={{
+        <FlatButton labelstyle={{
           "color": "rgba(0, 0, 0, 0.65)"
         }} label="Back to top" onClick={this.onScrollToTop}/>
       </div>

@@ -15,7 +15,7 @@ class FooterComponent extends Component {
 		return (
 			<div className="footer">
 				<Button
-					labelStyle={{
+					labelstyle={{
 						color: 'rgba(0, 0, 0, 0.65)'
 					}}
 					label="Back to top"
