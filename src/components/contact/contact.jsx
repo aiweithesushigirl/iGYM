@@ -55,12 +55,8 @@ class ContactComponent extends Component {
 	}
 
 	submitData() {
-		return fetch('/api/', {
+		return fetch('https://docs.google.com/forms/d/e/1FAIpQLScU72PJhoUPG5DMHmksPcT697d2QZsNXybfm0_Ll5j8tmOlDg/formResponse', {
 			method: 'POST',
-			headers: {
-				Accept: 'application/json',
-				'Content-Type': 'application/json'
-			},
 			body: JSON.stringify({ name: this.state.name, email: this.state.email, message: this.state.message })
 		})
 			.then((res) => console.dir(res))
@@ -78,69 +74,22 @@ class ContactComponent extends Component {
 		return (
 			<div className="contact">
 				<p className="headline">Contact</p>
-				<TextField
-					hinttext="Name"
-					label="Name"
-					floatinglabeltext="Name"
-					style={{
-						width: '100%'
-					}}
-					floatinglabelfocusstyle={{
-						color: '#A80202'
-					}}
-					underlinefocusstyle={{
-						borderColor: '#A80202'
-					}}
-					onChange={(e) => this.onUpdateField('name', e)}
-				/>
-				<TextField
-					hinttext="E-mail"
-					label="Email"
-					floatinglabeltext="E-mail"
-					type="email"
-					style={{
-						width: '100%'
-					}}
-					floatinglabelfocusstyle={{
-						color: '#A80202'
-					}}
-					underlinefocusstyle={{
-						borderColor: '#A80202'
-					}}
-					onChange={(e) => this.onUpdateField('email', e)}
-				/>
-				<TextField
-					hinttext="Your message"
-					label="Your message"
-					floatinglabeltext="Your message"
-					style={{
-						width: '100%'
-					}}
-					multiline={true}
-					rows={2}
-					floatinglabelfocusstyle={{
-						color: '#A80202'
-					}}
-					underlinefocusstyle={{
-						borderColor: '#A80202'
-					}}
-					onChange={(e) => this.onUpdateField('message', e)}
-				/>{' '}
-				{this.state.errorMessage != null && <p className="error-message message">{this.state.errorMessage}</p>}
-				{this.state.successMessage != null && (
-					<p className="success-message message">{this.state.successMessage}</p>
-				)}
-				{this.state.loading && <LinearProgress mode="indeterminate" color="#A80202" />}
-				<div className="contact-btn">
-					<Button
-						variant="contained"
-						label="Send message"
-						href="#contained-buttons"
-						onClick={this.onSubmit.bind(this)}
-					>
-					Send message
-					</Button>
-				</div>
+				<form action="https://docs.google.com/forms/d/e/1FAIpQLScU72PJhoUPG5DMHmksPcT697d2QZsNXybfm0_Ll5j8tmOlDg/formResponse" target="_self" method="POST" id="mG61Hd">
+	
+				Name:<br/>
+				<TextField type="text" name="entry.1464806371" />
+				<br/>
+
+				Email:<br/>
+				<TextField type="text" name="entry.1269394426" />
+				<br/>
+
+				Message:<br/>
+				<TextField type="text" name="entry.423682773" />
+				<br/>
+				<input type="submit" value="Submit" id="contained-button-file"/>
+			
+				</form>
 			</div>
 		);
 	}
