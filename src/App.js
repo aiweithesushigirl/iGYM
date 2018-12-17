@@ -14,13 +14,13 @@ class App extends Component {
     return (
 
         <div className="App">
-          <div className="section header-section">
-            <div className="section-container header-component">
+        
+          <div className="section">
+            <div className="section-container">
               <HeaderComponent></HeaderComponent>
             </div> 
           </div>
           <div className="section navigation">
-          
               <Navigation></Navigation>
               {/* <AppRouter /> */}
             </div>
