@@ -73,7 +73,7 @@ class ContactComponent extends Component {
 	render() {
 		return (
 			<div className="contact">
-				<p className="headline">Contact</p>
+				<p className="headline">Play with us</p>
 				<form action="https://docs.google.com/forms/d/e/1FAIpQLScU72PJhoUPG5DMHmksPcT697d2QZsNXybfm0_Ll5j8tmOlDg/formResponse" target="_self" method="POST" id="mG61Hd">
 	
 				Name:<br/>

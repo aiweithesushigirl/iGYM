@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Slider from '../slider/slider';
 import './header.css';
 
 class HeaderComponent extends Component {
@@ -15,10 +15,7 @@ class HeaderComponent extends Component {
 		return (
 			<div className="header-wrapper" style={{ height: this.state.height }}>
 				<div className="header">
-					<h1>
-						<b>iGYM</b>
-					</h1>
-					<h3>Play Together</h3>
+				<Slider></Slider>
 				</div>
 			</div>
 		);

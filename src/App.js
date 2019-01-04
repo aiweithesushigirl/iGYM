@@ -1,29 +1,53 @@
 import React, {Component} from 'react';
 import 'roboto-npm-webfont';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
+import scrollToComponent from 'react-scroll-to-component';
+import BottomNavigation from '@material-ui/core/BottomNavigation';
+import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 
 import HeaderComponent from './components/header/header';
 import IntroductionComponent from './components/introduction/introduction';
 import ContactComponent from './components/contact/contact';
 import FooterComponent from './components/footer/footer';
 import Navigation from './components/navigation/navigation';
-// import AppRouter from './AppRouter';
+import ControlledCarousel from './components/slider/slider';
 
 class App extends Component {
-  render() {
-    return (
+  state = {
+    value: 0,
+  };
 
+  handleChange = (event, value) => {
+    this.setState({ value });
+  };
+
+  componentDidMount() {
+    scrollToComponent(this.Blue, { offset: 0, align: 'middle', duration: 500, ease:'inCirc'});
+  }
+  render() {
+    const { value } = this.state;
+    return (
+      <Router>
         <div className="App">
-        
+
+        <div className='button_group'>
+          <button onClick={() => scrollToComponent(this.HeaderComponent, { offset: 0, align: 'top', duration: 1500})}>Go To Violet</button>
+        </div>
+       
           <div className="section">
-            <div className="section-container">
-              <HeaderComponent></HeaderComponent>
-            </div> 
-          </div>
           <div className="section navigation">
-              <Navigation></Navigation>
-              {/* <AppRouter /> */}
+          <BottomNavigation value={value} onChange={this.handleChange} showLabels>
+            <BottomNavigationAction label="About" value="About" onClick={() => scrollToComponent(this.HeaderComponent, { offset: 0, align: 'top', duration: 1000})}/>
+            <BottomNavigationAction label="Team" value="Team" />
+            <BottomNavigationAction label="Contact" value="Contact"  />
+          </BottomNavigation>
+            
             </div>
+            <section className="section-container" ref={(section) => { this.HeaderComponent = section; }}>
+              <HeaderComponent></HeaderComponent>
+            </section> 
+          </div>
           <div className="section colored">
             <div className="section-container">
               <IntroductionComponent></IntroductionComponent>
@@ -42,6 +66,7 @@ class App extends Component {
             </div>
           </div>
         </div>
+      </Router>
 
     );
   }
