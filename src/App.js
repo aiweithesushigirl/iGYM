@@ -30,36 +30,30 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-
-        <div className='button_group'>
-          <button onClick={() => scrollToComponent(this.HeaderComponent, { offset: 0, align: 'top', duration: 1500})}>Go To Violet</button>
-        </div>
-       
           <div className="section">
-          <div className="section navigation">
-          <BottomNavigation value={value} onChange={this.handleChange} showLabels>
-            <BottomNavigationAction label="About" value="About" onClick={() => scrollToComponent(this.HeaderComponent, { offset: 0, align: 'top', duration: 1000})}/>
-            <BottomNavigationAction label="Team" value="Team" />
-            <BottomNavigationAction label="Contact" value="Contact"  />
-          </BottomNavigation>
-            
+            <div className="section navigation">
+              <BottomNavigation value={value} onChange={this.handleChange} showLabels>
+                <BottomNavigationAction label="About" value="About" onClick={() => scrollToComponent(this.HeaderComponent, { offset: 0, align: 'top', duration: 1000})}/>
+                <BottomNavigationAction label="Team" value="Team" />
+                <BottomNavigationAction label="Contact" value="Contact" onClick={() => scrollToComponent(this.ContactComponent, { offset: 0, align: 'top', duration: 1000})} />
+              </BottomNavigation>            
             </div>
-            <section className="section-container" ref={(section) => { this.HeaderComponent = section; }}>
+            <section className="section-container">
               <HeaderComponent></HeaderComponent>
             </section> 
           </div>
-          <div className="section colored">
+          <div className="section colored" ref={(section) => { this.HeaderComponent = section; }}>
             <div className="section-container">
               <IntroductionComponent></IntroductionComponent>
-            </div>
-            
+            </div>  
           </div>
           
           <div className="section">
-            <div className="section-container">
+            <section className="section-container" ref={(section) => { this.ContactComponent = section; }}>
               <ContactComponent></ContactComponent>
-            </div>
+            </section>
           </div>
+
           <div className="section colored">
             <div className="section-container footer-component">
               <FooterComponent></FooterComponent>

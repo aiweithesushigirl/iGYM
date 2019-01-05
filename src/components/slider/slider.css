@@ -1,5 +1,19 @@
 .carousel {
-    width:100%;
-    height:50%;
+    width:160%;
+    height:100%;
     margin: auto;
+  }
+
+  @font-face {font-family: "Avenir Next";
+    src: url("//db.onlinewebfonts.com/t/f3df85918e3f1ba8a7b13be9b47882ce.eot");
+    src: url("//db.onlinewebfonts.com/t/f3df85918e3f1ba8a7b13be9b47882ce.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/f3df85918e3f1ba8a7b13be9b47882ce.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/f3df85918e3f1ba8a7b13be9b47882ce.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/f3df85918e3f1ba8a7b13be9b47882ce.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/f3df85918e3f1ba8a7b13be9b47882ce.svg#Avenir Next") format("svg");
+  }
+
+  p.thick {
+    font-family: "Avenir Next";
+    font-weight: bold;
   }

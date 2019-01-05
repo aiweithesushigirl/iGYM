@@ -32,22 +32,22 @@ class Slider extends React.Component {
           onSelect={this.handleSelect}
         >
           <Carousel.Item>
-            <img src={require("/Users/wuaiwei/Desktop/personal-portfolio/src/components/slider/images/Soccer.jpg")} alt="1"/>
             <Carousel.Caption>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <p class="thick">A Place to Play and Exercise Together</p>
+            </Carousel.Caption>
+          <img src={require("/Users/wuaiwei/Desktop/personal-portfolio/src/components/slider/images/Slideshow_1.jpg")} alt="1"/>
+          </Carousel.Item>
+          <Carousel.Item>
+          <img src={require("/Users/wuaiwei/Desktop/personal-portfolio/src/components/slider/images/Slideshow_2.jpg")} alt="2"/>
+            <Carousel.Caption>
+              <p>A Place to Play and Exercise Together</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-          <img src={require("/Users/wuaiwei/Desktop/personal-portfolio/src/components/slider/images/Soccer.jpg")} alt="2"/>
-            <Carousel.Caption>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-          <img src={require("/Users/wuaiwei/Desktop/personal-portfolio/src/components/slider/images/Soccer.jpg")} alt="3" />
+          <img src={require("/Users/wuaiwei/Desktop/personal-portfolio/src/components/slider/images/Slideshow_3.jpg")} alt="3" />
             <Carousel.Caption>
               <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              A Place to Play and Exercise Together
               </p>
             </Carousel.Caption>
           </Carousel.Item>
