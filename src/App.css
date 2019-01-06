@@ -56,7 +56,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   padding-top: 100px;
-  padding-bottom: auto;
+  padding-bottom: 100px;
 
 }
 
@@ -71,7 +71,7 @@ p {
 .section-container.header-component {
   height: 900px;
   padding-top: 100px;
-  padding-bottom: 160px;
+
 }
 
 .section-container.footer-component {
