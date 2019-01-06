@@ -4,9 +4,10 @@ img {
 }
 
 .teams {
-    display: flex;
+
     margin: auto;
     padding: 100px;
+
 }
 
 .team-photo {
@@ -16,13 +17,20 @@ img {
 }
 
 .faculty {
-    flex: 1.5
+    width: 50%
 }
 
 .student {
-    flex: 1
+    width: 30%
 }
 
 .consultant {
-    flex: 1
+    width: 30%
+}
+
+@media (min-width: 900px) {
+    .teams {
+        display: flex;
+        justify-content: space-between;
+    }
 }

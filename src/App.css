@@ -23,7 +23,7 @@ body {
 .h1 {
   color: #00a3ff;
   text-align: center;
-  font-weight: 500
+  font-weight: 900
 }
 
 h3 {
@@ -55,14 +55,20 @@ p {
   max-width: auto;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 160px;
-  padding-bottom: 160px;
+  padding-top: 100px;
+  padding-bottom: auto;
+
 }
 
-.section.navigation {
-  overflow: hidden;
+nav {
+  height: 50px;
+  box-sizing: border-box;
+  margin: auto;
+  position: fixed;
+  /* padding: 50px; */
+  display: flex;
+  background-color: #ffffff;
   width: 100%;
-  /* position: fixed; */
 }
 
 .section-container.header-component {
@@ -73,10 +79,15 @@ p {
 
 .section-container.footer-component {
   padding: 0;
+  background: #00a3ff
 }
 
 .section.colored {
   background: #f7f7f7;
+}
+
+.section.blue {
+  background: #00a3ff
 }
 
 p.headline {
@@ -88,9 +99,6 @@ p.headline {
   opacity: 0.8;
 }
 
-.header-section {
-  background: #ffffff;
-}
 
 p.text-justify {
   text-align: justify;

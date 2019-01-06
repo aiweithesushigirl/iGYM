@@ -18,19 +18,22 @@ class TeamComponent extends Component {
 				</p>
 				<div className="teams">
 					<div className="faculty">
-						<ul>
+						<ul style={{ listStyleType: 'none' }}>
+							<li>Faculty</li>
 							<li>Principal Researcher Roland Graf</li>
 							<li> Stamps School of Art and Design Sun Young Park</li>
 							<li> Stamps School and School of Information Hun Seok Kim</li>
 						</ul>
 					</div>
 					<div className="student">
-						<ul>
+						<ul style={{ listStyleType: 'none' }}>
+							<li>Current Students</li>
 							<li>Emma Shpiz</li>
 							<li>Zixuan Li</li>
 							<li>Dashiell Carichner</li>
 						</ul>
-						<ul>
+						<ul style={{ listStyleType: 'none' }}>
+							<li>Former Students</li>
 							<li>Megan Freund</li>
 							<li>Priyanka Raju</li>
 							<li>Yaqian Zhao</li>
@@ -38,7 +41,8 @@ class TeamComponent extends Component {
 						</ul>
 					</div>
 					<div className="consultant">
-						<ul>
+						<ul style={{ listStyleType: 'none' }}>
+							<li>Consultants</li>
 							<li>Seth Andrew Warschausky, Ph.D.</li>
 							<li>Betsy Howell, M.S., P.T.</li>
 							<li>Robert C. Ferguson, MHS, OTRL</li>

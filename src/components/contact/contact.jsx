@@ -79,10 +79,8 @@ class ContactComponent extends Component {
 				<h1 className="h1">Contact</h1>
 				<div>
 					<p className="recuit-text">
-						<h4>
-							Please email us if you are interested to learn more about iGYM or sign up below for one of
-							our next playtests.
-						</h4>
+						Please <b>email us</b> if you are interested to learn more about iGYM or sign up below for one
+						of our next playtests.
 					</p>
 				</div>
 				<div className="form-box">
@@ -93,9 +91,7 @@ class ContactComponent extends Component {
 						/>
 					</div>
 					<div className="recruit-form">
-						<p className="headline">
-							<h4>Play with us</h4>
-						</p>
+						<p className="headline">Play with us</p>
 						<p className="second-text">
 							We are looking for playtesters to try our prototype. Please fill out the form if you are
 							interested and we will follow up with more details soon.
