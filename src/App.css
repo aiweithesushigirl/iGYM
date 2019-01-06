@@ -60,20 +60,17 @@ p {
 
 }
 
-nav {
+.nav {
   height: 50px;
-  box-sizing: border-box;
   margin: auto;
   position: fixed;
-  /* padding: 50px; */
-  display: flex;
   background-color: #ffffff;
   width: 100%;
 }
 
 .section-container.header-component {
   height: 900px;
-  padding-top: 160px;
+  padding-top: 100px;
   padding-bottom: 160px;
 }
 

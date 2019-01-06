@@ -14,13 +14,6 @@ import ContactComponent from './components/contact/contact';
 import FooterComponent from './components/footer/footer';
 import TeamComponent from './components/team/team';
 
-const styles = {
-	label: {
-		textTransform: 'capitalize',
-		fontSize: '50px'
-	}
-};
-
 const StyledButton = withStyles({
 	root: {
 		borderRadius: 3,
@@ -52,7 +45,7 @@ class App extends Component {
 		const { value } = this.state;
 		return (
 			<div className="App">
-				<nav>
+				<BottomNavigation value={value} onChange={this.handleChange}>
 					<StyledButton
 						label="About"
 						value="About"
@@ -89,7 +82,7 @@ class App extends Component {
 					>
 						Contact
 					</StyledButton>
-				</nav>
+				</BottomNavigation>
 
 				<div className="section header-section">
 					<div className="section-container header-component">
@@ -130,7 +123,7 @@ class App extends Component {
 					</section>
 				</div>
 
-				<div className="section colored">
+				<div className="section blue">
 					<div className="section-container footer-component">
 						<FooterComponent />
 					</div>
