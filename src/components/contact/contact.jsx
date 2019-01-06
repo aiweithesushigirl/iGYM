@@ -55,10 +55,13 @@ class ContactComponent extends Component {
 	}
 
 	submitData() {
-		return fetch('https://docs.google.com/forms/d/e/1FAIpQLScU72PJhoUPG5DMHmksPcT697d2QZsNXybfm0_Ll5j8tmOlDg/formResponse', {
-			method: 'POST',
-			body: JSON.stringify({ name: this.state.name, email: this.state.email, message: this.state.message })
-		})
+		return fetch(
+			'https://docs.google.com/forms/d/e/1FAIpQLScU72PJhoUPG5DMHmksPcT697d2QZsNXybfm0_Ll5j8tmOlDg/formResponse',
+			{
+				method: 'POST',
+				body: JSON.stringify({ name: this.state.name, email: this.state.email, message: this.state.message })
+			}
+		)
 			.then((res) => console.dir(res))
 			.catch((e) => console.dir(e));
 	}
@@ -73,23 +76,49 @@ class ContactComponent extends Component {
 	render() {
 		return (
 			<div className="contact">
-				<p className="headline">Play with us</p>
-				<form action="https://docs.google.com/forms/d/e/1FAIpQLScU72PJhoUPG5DMHmksPcT697d2QZsNXybfm0_Ll5j8tmOlDg/formResponse" target="_self" method="POST" id="mG61Hd">
-	
-				Name:<br/>
-				<TextField type="text" name="entry.1464806371" />
-				<br/>
-
-				Email:<br/>
-				<TextField type="text" name="entry.1269394426" />
-				<br/>
-
-				Message:<br/>
-				<TextField type="text" name="entry.423682773" />
-				<br/>
-				<input type="submit" value="Submit" id="contained-button-file"/>
-			
-				</form>
+				<h1 className="h1">Contact</h1>
+				<div>
+					<p className="recuit-text">
+						<h4>
+							Please email us if you are interested to learn more about iGYM or sign up below for one of
+							our next playtests.
+						</h4>
+					</p>
+				</div>
+				<div className="form-box">
+					<div className="image">
+						<img
+							src={require('/Users/wuaiwei/Desktop/personal-portfolio/src/components/slider/images/Slideshow_1.jpg')}
+							alt="1"
+						/>
+					</div>
+					<div className="recruit-form">
+						<p className="headline">
+							<h4>Play with us</h4>
+						</p>
+						<p className="second-text">
+							We are looking for playtesters to try our prototype. Please fill out the form if you are
+							interested and we will follow up with more details soon.
+						</p>
+						<form
+							action="https://docs.google.com/forms/d/e/1FAIpQLScU72PJhoUPG5DMHmksPcT697d2QZsNXybfm0_Ll5j8tmOlDg/formResponse"
+							target="_self"
+							method="POST"
+							id="mG61Hd"
+						>
+							Name:<br />
+							<TextField type="text" name="entry.1464806371" />
+							<br />
+							Email:<br />
+							<TextField type="text" name="entry.1269394426" />
+							<br />
+							Message:<br />
+							<TextField type="text" name="entry.423682773" />
+							<br />
+							<input type="submit" value="Submit" id="contained-button-file" />
+						</form>
+					</div>
+				</div>
 			</div>
 		);
 	}

@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import './introduction.css';
-import Button from '@material-ui/core/Button';
 
 class IntroductionComponent extends Component {
 	render() {
 		return (
-			<div className="introduction" align="left">
-				<h1 className="h1">iGYM begins at Univeristy of Michigan</h1>
-				<Button variant="contained" color="primary">
-					Learn More
-				</Button>
+			<div className="introduction">
+				<h1 className="h1">
+					Building a future where play and exercise are inclusive and fun for people of all abilities.
+				</h1>
+				<p>
+					iGYM is an augmented reality system for inclusive play and exercise. It is designed for school and
+					community-based sport or recreation facilities seeking to provide novel and accessible ways for
+					people with motor disabilities and their non-disabled peers to play and exercise together.
+				</p>
 			</div>
 		);
 	}

@@ -1,0 +1,28 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.teams {
+    display: flex;
+    margin: auto;
+    padding: 100px;
+}
+
+.team-photo {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+}
+
+.faculty {
+    flex: 1.5
+}
+
+.student {
+    flex: 1
+}
+
+.consultant {
+    flex: 1
+}

@@ -1,12 +1,10 @@
 .header {
   text-align: center;
   position: absolute;
-  padding-top: 25px;
-  top: 60%;
-  transform: translateY(-50%);
+  top: 50%;
+  transform: translateY(-10%);
   width: 100%;
-  color: #67a9d8;
-  height: 300px
+  color: white;
 }
 
 .header-wrapper {

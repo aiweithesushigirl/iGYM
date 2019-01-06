@@ -1,19 +1,21 @@
 .carousel {
-    width:160%;
-    height:100%;
-    margin: auto;
-  }
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
 
-  @font-face {font-family: "Avenir Next";
-    src: url("//db.onlinewebfonts.com/t/f3df85918e3f1ba8a7b13be9b47882ce.eot");
-    src: url("//db.onlinewebfonts.com/t/f3df85918e3f1ba8a7b13be9b47882ce.eot?#iefix") format("embedded-opentype"),
+@font-face {
+  font-family: "Avenir Next";
+  src: url("//db.onlinewebfonts.com/t/f3df85918e3f1ba8a7b13be9b47882ce.eot");
+  src: url("//db.onlinewebfonts.com/t/f3df85918e3f1ba8a7b13be9b47882ce.eot?#iefix") format("embedded-opentype"),
     url("//db.onlinewebfonts.com/t/f3df85918e3f1ba8a7b13be9b47882ce.woff2") format("woff2"),
     url("//db.onlinewebfonts.com/t/f3df85918e3f1ba8a7b13be9b47882ce.woff") format("woff"),
     url("//db.onlinewebfonts.com/t/f3df85918e3f1ba8a7b13be9b47882ce.ttf") format("truetype"),
     url("//db.onlinewebfonts.com/t/f3df85918e3f1ba8a7b13be9b47882ce.svg#Avenir Next") format("svg");
-  }
+}
 
-  p.thick {
-    font-family: "Avenir Next";
-    font-weight: bold;
-  }
+p.thick {
+  font-family: "Avenir Next";
+  font-size: 20px;
+  font-weight: bolder;
+}

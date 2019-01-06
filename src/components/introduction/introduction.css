@@ -1,10 +1,7 @@
 .introduction {
-  text-align: left;
+  text-align: center;
   display: inline-block;
+  margin: auto;
+  padding: 200px;
 
-}
-
-.h1 {
-  color: white;
-  text-align: left
 }
