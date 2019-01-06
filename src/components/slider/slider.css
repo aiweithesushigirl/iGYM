@@ -14,8 +14,17 @@
     url("//db.onlinewebfonts.com/t/f3df85918e3f1ba8a7b13be9b47882ce.svg#Avenir Next") format("svg");
 }
 
+.caption {
+  position: fixed;
+  right: 30%;
+  left: 30%;
+  bottom: 40%;
+  width: 500px;
+
+}
+
 p.thick {
   font-family: "Avenir Next";
-  font-size: 20px;
+  font-size: 50px;
   font-weight: bolder;
 }

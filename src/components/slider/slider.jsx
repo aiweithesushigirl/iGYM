@@ -29,7 +29,9 @@ class Slider extends React.Component {
 			<Carousel activeIndex={index} direction={direction} onSelect={this.handleSelect}>
 				<Carousel.Item>
 					<Carousel.Caption>
-						<p className="thick">A Place to Play and Exercise Together</p>
+						<div className="caption">
+							<p className="thick">A Place to Play and Exercise Together</p>
+						</div>
 						<Button variant="contained" color="primary">
 							Play with us
 						</Button>
