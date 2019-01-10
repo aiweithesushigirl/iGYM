@@ -45,8 +45,8 @@ p {
 }
 
 .section {
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 0%;
+  padding-right: 0%;
   position: relative;
 }
 
@@ -55,8 +55,8 @@ p {
   max-width: auto;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
 }
 
@@ -64,13 +64,14 @@ p {
   height: 50px;
   margin: auto;
   position: fixed;
-  background-color: #ffffff;
+  background: none;
   width: 100%;
 }
 
 .section-container.header-component {
   height: 900px;
-  padding-top: 100px;
+  /* padding-top: 100px; */
+  clear: both;
 
 }
 
@@ -105,6 +106,31 @@ p.text-center {
   text-align: center;
 }
 
-BottomNavigation {
-  text-align: center;
+
+nav {
+  width: 100%;
+  margin: 0;
+  top: 0;
+  background: none;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.fixed-nav {
+  background: none;
+  text-decoration: none;
+  position: fixed;
+}
+
+button {
+  flex: 1;
+  border: none;
+  margin: 4px 2px;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
 }

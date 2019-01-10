@@ -20,9 +20,20 @@ class TeamComponent extends Component {
 					<div className="faculty">
 						<ul style={{ listStyleType: 'none' }}>
 							<li>Faculty</li>
-							<li>Principal Researcher Roland Graf</li>
-							<li> Stamps School of Art and Design Sun Young Park</li>
-							<li> Stamps School and School of Information Hun Seok Kim</li>
+							<li>
+								Principal Researcher{' '}
+								<a href="https://stamps.umich.edu/people/detail/roland_graf">Roland Graf</a>
+							</li>
+							<li>
+								{' '}
+								Stamps School of Art and Design{' '}
+								<a href="https://stamps.umich.edu/people/detail/sun_young_park">Sun Young Park</a>
+							</li>
+							<li>
+								{' '}
+								Stamps School and School of Information{' '}
+								<a href=" https://kim.engin.umich.edu/">Hun Seok Kim</a>
+							</li>
 						</ul>
 					</div>
 					<div className="student">

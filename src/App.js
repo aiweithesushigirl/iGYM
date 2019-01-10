@@ -13,6 +13,7 @@ import IntroductionComponent from './components/introduction/introduction';
 import ContactComponent from './components/contact/contact';
 import FooterComponent from './components/footer/footer';
 import TeamComponent from './components/team/team';
+import SupportComponent from './components/support/support';
 
 const StyledButton = withStyles({
 	root: {
@@ -30,6 +31,14 @@ const StyledButton = withStyles({
 })(Button);
 
 class App extends Component {
+	constructor(props) {
+		super(props);
+
+		this.state = {};
+
+		this.handleScroll = this.handleScroll.bind(this);
+	}
+
 	state = {
 		value: 0
 	};
@@ -38,15 +47,28 @@ class App extends Component {
 		this.setState({ value });
 	};
 
+	handleScroll() {
+		this.setState({ scroll: window.scrollY });
+	}
+
 	componentDidMount() {
+		const el = document.querySelector('nav');
+		this.setState({ top: el.offsetTop, height: el.offsetHeight });
+		window.addEventListener('scroll', this.handleScroll);
 		scrollToComponent(this.Blue, { offset: 0, align: 'middle', duration: 500, ease: 'inCirc' });
+	}
+
+	componentDidUpdate() {
+		this.state.scroll > this.state.top
+			? (document.body.style.paddingTop = `${this.state.height}px`)
+			: (document.body.style.paddingTop = 0);
 	}
 	render() {
 		const { value } = this.state;
 		return (
 			<div className="App">
-				<BottomNavigation value={value} onChange={this.handleChange}>
-					<StyledButton
+				<nav className={this.state.scroll > this.state.top ? 'fixed-nav' : ''}>
+					<button
 						label="About"
 						value="About"
 						onClick={() =>
@@ -57,8 +79,8 @@ class App extends Component {
 							})}
 					>
 						About
-					</StyledButton>
-					<StyledButton
+					</button>
+					<button
 						label="Team"
 						value="Team"
 						onClick={() =>
@@ -69,8 +91,8 @@ class App extends Component {
 							})}
 					>
 						Team
-					</StyledButton>
-					<StyledButton
+					</button>
+					<button
 						label="Contact"
 						value="Contact"
 						onClick={() =>
@@ -81,8 +103,8 @@ class App extends Component {
 							})}
 					>
 						Contact
-					</StyledButton>
-				</BottomNavigation>
+					</button>
+				</nav>
 
 				<div className="section header-section">
 					<div className="section-container header-component">
@@ -90,37 +112,43 @@ class App extends Component {
 					</div>
 				</div>
 
-				<div
-					className="section"
-					ref={(section) => {
-						this.HeaderComponent = section;
-					}}
-				>
-					<div className="section-container">
+				<div className="section">
+					<div
+						className="section-container"
+						ref={(section) => {
+							this.HeaderComponent = section;
+						}}
+					>
 						<IntroductionComponent />
 					</div>
 				</div>
 
-				<div
-					className="section colored"
-					ref={(section) => {
-						this.TeamComponent = section;
-					}}
-				>
-					<div className="section-container">
+				<div className="section colored">
+					<div
+						className="section-container"
+						ref={(section) => {
+							this.TeamComponent = section;
+						}}
+					>
 						<TeamComponent />
 					</div>
 				</div>
 
 				<div className="section">
-					<section
+					<div
 						className="section-container"
 						ref={(section) => {
 							this.ContactComponent = section;
 						}}
 					>
 						<ContactComponent />
-					</section>
+					</div>
+				</div>
+
+				<div className="section">
+					<div className="section-container">
+						<SupportComponent />
+					</div>
 				</div>
 
 				<div className="section blue">
