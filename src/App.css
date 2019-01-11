@@ -115,6 +115,7 @@ nav {
   display: flex;
   position: -webkit-sticky;
   position: sticky;
+  z-index: 1
 }
 
 .fixed-nav {
@@ -128,6 +129,7 @@ button {
   border: none;
   margin: 4px 2px;
   text-decoration: none;
+  background: none;
   justify-content: center;
   align-items: center;
   padding: 10px;
