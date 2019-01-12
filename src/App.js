@@ -15,21 +15,6 @@ import FooterComponent from './components/footer/footer';
 import TeamComponent from './components/team/team';
 import SupportComponent from './components/support/support';
 
-const StyledButton = withStyles({
-	root: {
-		borderRadius: 3,
-		border: 0,
-		height: 48,
-		padding: '0 30px',
-		flex: 1
-	},
-	label: {
-		textTransform: 'capitalize',
-		fontSize: '20px',
-		textColor: 'grey'
-	}
-})(Button);
-
 class App extends Component {
 	constructor(props) {
 		super(props);
@@ -81,7 +66,9 @@ class App extends Component {
 								duration: 1000
 							})}
 					>
-						iGYM
+						<i>
+							<strong>iGYM</strong>
+						</i>
 					</button>
 
 					<button
