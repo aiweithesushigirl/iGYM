@@ -15,7 +15,7 @@ class HeaderComponent extends Component {
 		return (
 			<div className="header-wrapper" style={{ height: this.state.height }}>
 				<div className="header">
-				<Slider></Slider>
+					<Slider />
 				</div>
 			</div>
 		);

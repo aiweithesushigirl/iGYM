@@ -36,6 +36,8 @@ class App extends Component {
 
 		this.state = {};
 
+		this.ContactComponent = React.createRef();
+
 		this.handleScroll = this.handleScroll.bind(this);
 	}
 
@@ -55,7 +57,7 @@ class App extends Component {
 		const el = document.querySelector('nav');
 		this.setState({ top: el.offsetTop, height: el.offsetHeight });
 		window.addEventListener('scroll', this.handleScroll);
-		scrollToComponent(this.Blue, { offset: 0, align: 'middle', duration: 500, ease: 'inCirc' });
+		// scrollToComponent(this.Blue, { offset: 0, align: 'top', duration: 500, ease: 'inCirc' });
 	}
 
 	componentDidUpdate() {
@@ -68,6 +70,20 @@ class App extends Component {
 		return (
 			<div className="App">
 				<nav className={this.state.scroll > this.state.top ? 'fixed-nav' : ''}>
+					<button
+						className="testing"
+						label="iGYM"
+						value="iGYM"
+						onClick={() =>
+							scrollToComponent(this.FirstComponent, {
+								offset: 0,
+								align: 'top',
+								duration: 1000
+							})}
+					>
+						iGYM
+					</button>
+
 					<button
 						label="About"
 						value="About"
@@ -107,7 +123,25 @@ class App extends Component {
 				</nav>
 
 				<div className="section header-section">
-					<div className="section-container header-component">
+					<div
+						className="section-container header-component"
+						ref={(section) => {
+							this.FirstComponent = section;
+						}}
+					>
+						<div className="play">
+							<button
+								className="play"
+								onClick={() =>
+									scrollToComponent(this.ContactComponent, {
+										offset: 0,
+										align: 'top',
+										duration: 1000
+									})}
+							>
+								Play with us
+							</button>
+						</div>
 						<HeaderComponent />
 					</div>
 				</div>

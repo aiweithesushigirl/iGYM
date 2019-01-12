@@ -35,7 +35,8 @@ input[type=submit] {
 
 .form-box {
 
-  display: flex
+  display: flex;
+  padding-top: 50px
 }
 
 .image {

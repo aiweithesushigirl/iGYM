@@ -1,7 +1,7 @@
 import React from 'react';
 import './slider.css';
 import { Carousel } from 'react-bootstrap';
-import Button from '@material-ui/core/Button';
+import scrollToComponent from 'react-scroll-to-component';
 
 class Slider extends React.Component {
 	constructor(props, context) {
@@ -32,9 +32,6 @@ class Slider extends React.Component {
 						<div className="caption">
 							<p className="thick">A Place to Play and Exercise Together</p>
 						</div>
-						<Button variant="contained" color="primary">
-							Play with us
-						</Button>
 					</Carousel.Caption>
 					<img
 						src={require('/Users/wuaiwei/Desktop/personal-portfolio/src/components/slider/images/Slideshow_1.jpg')}
@@ -47,7 +44,9 @@ class Slider extends React.Component {
 						alt="2"
 					/>
 					<Carousel.Caption>
-						<p className="thick">A Place to Play and Exercise Together</p>
+						<div className="caption">
+							<p className="thick">A Place to Play and Exercise Together</p>
+						</div>
 					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item>
@@ -56,7 +55,9 @@ class Slider extends React.Component {
 						alt="3"
 					/>
 					<Carousel.Caption>
-						<p className="thick">A Place to Play and Exercise Together</p>
+						<div className="caption">
+							<p className="thick">A Place to Play and Exercise Together</p>
+						</div>
 					</Carousel.Caption>
 				</Carousel.Item>
 			</Carousel>

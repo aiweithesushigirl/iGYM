@@ -115,18 +115,23 @@ nav {
   display: flex;
   position: -webkit-sticky;
   position: sticky;
-  z-index: 1
+  z-index: 2;
+  color: #f7f7f7;
+  font-weight: 900;
+  font-size: 20px
 }
 
 .fixed-nav {
-  background: none;
+  background: black;
   text-decoration: none;
   position: fixed;
+  color: #f7f7f7
 }
 
 button {
   flex: 1;
   border: none;
+  outline: none;
   margin: 4px 2px;
   text-decoration: none;
   background: none;
@@ -135,4 +140,33 @@ button {
   padding: 10px;
   transition: all 0.3s ease-in;
   cursor: pointer;
+}
+
+button.testing {
+  flex: 0.5;
+  outline: none;
+  font: italic bold
+}
+
+button.play {
+  white-space: nowrap;
+  background-color: #00a3ff;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 15px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 16px;
+  z-index: 1;
+}
+
+.play {
+  margin: 1em auto;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 600px;
+  padding-left: 43%
 }
