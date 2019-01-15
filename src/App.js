@@ -67,7 +67,7 @@ class App extends Component {
 							})}
 					>
 						<i>
-							<strong>iGYM</strong>
+							iGYM
 						</i>
 					</button>
 

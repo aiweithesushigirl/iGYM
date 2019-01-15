@@ -4,12 +4,14 @@ img {
 }
 
 .teams {
-
     margin: auto;
-    padding: 100px;
+    max-width: 75%;
+    font-family: "Avenir Next";
 
 }
-
+b {
+    font-family: "Avenir Next Bold"; 
+}
 .team-photo {
     max-width: 800px;
     margin: auto;

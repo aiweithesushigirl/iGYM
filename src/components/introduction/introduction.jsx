@@ -8,7 +8,7 @@ class IntroductionComponent extends Component {
 				<h1 className="title">
 					Building a future where play and exercise are inclusive and fun for people of all abilities.
 				</h1>
-				<div className="video" style={{ textAlign: 'center' }}>
+				<div className="video">
 					<iframe
 						src="https://player.vimeo.com/video/288617704"
 						width="800"

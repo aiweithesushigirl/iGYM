@@ -5,7 +5,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Avenir Next';
+  font-family: 'Avenir Next Bold';
   color: #212121 !important;
   overflow-x: hidden;
 }
@@ -18,6 +18,14 @@ body {
     url("//db.onlinewebfonts.com/t/f3df85918e3f1ba8a7b13be9b47882ce.woff") format("woff"),
     url("//db.onlinewebfonts.com/t/f3df85918e3f1ba8a7b13be9b47882ce.ttf") format("truetype"),
     url("//db.onlinewebfonts.com/t/f3df85918e3f1ba8a7b13be9b47882ce.svg#Avenir Next") format("svg");
+}
+
+@font-face {
+  font-family: 'Avenir Next Bold';
+  font-weight: bolder;
+  font-style: normal;
+  font-variant:normal;
+  src: url('/Users/wuaiwei/Desktop/personal-portfolio/src/static/font/AvenirNextLTPro-Bold.otf') format('otf')
 }
 
 .h1 {
@@ -40,6 +48,9 @@ span {
 }
 
 p {
+  font-family: "Avenir Next";
+  font-weight: 500;
+  font-size: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -70,7 +81,6 @@ p {
 
 .section-container.header-component {
   height: 900px;
-  /* padding-top: 100px; */
   clear: both;
 
 }
@@ -91,7 +101,7 @@ p {
 p.headline {
   margin-top: 0;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 900;
   letter-spacing: 3px;
   font-size: 10pt;
   opacity: 0.8;
@@ -144,8 +154,9 @@ button {
 
 button.testing {
   flex: 0.5;
+  font-family: 'Avenir Next Bold';
   outline: none;
-  font: italic bold
+
 }
 
 button.play {

@@ -22,24 +22,33 @@ class TeamComponent extends Component {
 					<div className="faculty">
 						<ul style={{ listStyleType: 'none' }}>
 							<li>
-								Principal Researcher{' '}
+							
 								<a href="https://stamps.umich.edu/people/detail/roland_graf">
-									<b>Roland Graf</b>
-								</a>
-							</li>
-							<li>
-								{' '}
+									<b>Roland Graf</b></a>
+                                    <br/>
+                                    {' '}
 								Stamps School of Art and Design{' '}
+								
+							</li>
+                            <br/>
+							<li>
+								
 								<a href="https://stamps.umich.edu/people/detail/sun_young_park">
 									<b>Sun Young Park</b>
 								</a>
+                                <br/>
+                                    {' '}
+								College of Enginerring{' '}
 							</li>
+                            <br/>
 							<li>
-								{' '}
-								Stamps School and School of Information{' '}
+								
 								<a href=" https://kim.engin.umich.edu/">
 									<b>Hun Seok Kim</b>
 								</a>
+                                <br/>
+                                {' '}
+								Stamps School and School of Information{' '}
 							</li>
 						</ul>
 					</div>
@@ -48,14 +57,17 @@ class TeamComponent extends Component {
 							<li>
 								<b>Current Students</b>
 							</li>
+                            <br/>
 							<li>Emma Shpiz</li>
 							<li>Zixuan Li</li>
 							<li>Dashiell Carichner</li>
 						</ul>
+                        <br/>
 						<ul style={{ listStyleType: 'none' }}>
 							<li>
 								<b>Former Students</b>
 							</li>
+                            <br/>
 							<li>Megan Freund</li>
 							<li>Priyanka Raju</li>
 							<li>Yaqian Zhao</li>
@@ -67,6 +79,7 @@ class TeamComponent extends Component {
 							<li>
 								<b>Consultants</b>
 							</li>
+                            <br/>
 							<li>Seth Andrew Warschausky, Ph.D.</li>
 							<li>Betsy Howell, M.S., P.T.</li>
 							<li>Robert C. Ferguson, MHS, OTRL</li>
