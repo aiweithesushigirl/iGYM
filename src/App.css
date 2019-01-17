@@ -6,132 +6,132 @@
   font-style: normal;
   font-weight: normal;
   src: local('Avenir Next LT Pro Ultra Light'), url('AvenirNextLTPro-UltLt.woff') format('woff');
-  }
-  
-  
-  @font-face {
+}
+
+
+@font-face {
   font-family: 'Avenir Next LT Pro Ultra Light Italic';
   font-style: normal;
   font-weight: normal;
   src: local('Avenir Next LT Pro Ultra Light Italic'), url('AvenirNextLTPro-UltLtIt.woff') format('woff');
-  }
-  
-  
-  @font-face {
+}
+
+
+@font-face {
   font-family: 'Avenir Next LT Pro Heavy';
   font-style: normal;
   font-weight: normal;
   src: local('Avenir Next LT Pro Heavy'), url('AvenirNextLTPro-Heavy.woff') format('woff');
-  }
-  
-  
-  @font-face {
+}
+
+
+@font-face {
   font-family: 'Avenir Next LT Pro Heavy Italic';
   font-style: normal;
   font-weight: normal;
   src: local('Avenir Next LT Pro Heavy Italic'), url('AvenirNextLTPro-HeavyIt.woff') format('woff');
-  }
+}
 
-  @font-face {
-    font-family: 'Avenir LT Std 55 Roman';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Avenir LT Std 55 Roman'), url('AvenirLTStd-Roman.woff') format('woff');
-    }
-    
-    
-    @font-face {
-    font-family: 'Avenir LT Std 55 Oblique';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Avenir LT Std 55 Oblique'), url('AvenirLTStd-Oblique.woff') format('woff');
-    }
-    
-    
-    @font-face {
-    font-family: 'Avenir LT Std 35 Light';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Avenir LT Std 35 Light'), url('AvenirLTStd-Light.woff') format('woff');
-    }
-    
-    
-    @font-face {
-    font-family: 'Avenir LT Std 35 Light Oblique';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Avenir LT Std 35 Light Oblique'), url('AvenirLTStd-LightOblique.woff') format('woff');
-    }
-    
-    
-    @font-face {
-    font-family: 'Avenir LT Std 45 Book';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Avenir LT Std 45 Book'), url('AvenirLTStd-Book.woff') format('woff');
-    }
-    
-    
-    @font-face {
-    font-family: 'Avenir LT Std 45 Book Oblique';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Avenir LT Std 45 Book Oblique'), url('AvenirLTStd-BookOblique.woff') format('woff');
-    }
-    
-    
-    @font-face {
-    font-family: 'Avenir LT Std 65 Medium';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Avenir LT Std 65 Medium'), url('AvenirLTStd-Medium.woff') format('woff');
-    }
-    
-    
-    @font-face {
-    font-family: 'Avenir LT Std 65 Medium Oblique';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Avenir LT Std 65 Medium Oblique'), url('AvenirLTStd-MediumOblique.woff') format('woff');
-    }
-    
-    
-    @font-face {
-    font-family: 'Avenir LT Std 85 Heavy';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Avenir LT Std 85 Heavy'), url('AvenirLTStd-Heavy.woff') format('woff');
-    }
-    
-    
-    @font-face {
-    font-family: 'Avenir LT Std 85 Heavy Oblique';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Avenir LT Std 85 Heavy Oblique'), url('AvenirLTStd-HeavyOblique.woff') format('woff');
-    }
-    
-    
-    @font-face {
-    font-family: 'Avenir LT Std 95 Black';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Avenir LT Std 95 Black'), url('AvenirLTStd-Black.woff') format('woff');
-    }
-    
-    
-    @font-face {
-    font-family: 'Avenir LT Std 95 Black Oblique';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Avenir LT Std 95 Black Oblique'), url('AvenirLTStd-BlackOblique.woff') format('woff');
-    }
+@font-face {
+  font-family: 'Avenir LT Std 55 Roman';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 55 Roman'), url('AvenirLTStd-Roman.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Avenir LT Std 55 Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 55 Oblique'), url('AvenirLTStd-Oblique.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Avenir LT Std 35 Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 35 Light'), url('AvenirLTStd-Light.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Avenir LT Std 35 Light Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 35 Light Oblique'), url('AvenirLTStd-LightOblique.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Avenir LT Std 45 Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 45 Book'), url('AvenirLTStd-Book.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Avenir LT Std 45 Book Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 45 Book Oblique'), url('AvenirLTStd-BookOblique.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Avenir LT Std 65 Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 65 Medium'), url('AvenirLTStd-Medium.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Avenir LT Std 65 Medium Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 65 Medium Oblique'), url('AvenirLTStd-MediumOblique.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Avenir LT Std 85 Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 85 Heavy'), url('AvenirLTStd-Heavy.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Avenir LT Std 85 Heavy Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 85 Heavy Oblique'), url('AvenirLTStd-HeavyOblique.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Avenir LT Std 95 Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 95 Black'), url('AvenirLTStd-Black.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Avenir LT Std 95 Black Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 95 Black Oblique'), url('AvenirLTStd-BlackOblique.woff') format('woff');
+}
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Avenir LT Std 45 Book';
-  color:grey !important;
+  color: grey !important;
   overflow-x: hidden;
 }
 
@@ -261,7 +261,7 @@ button.testing {
   text-align: left
 }
 
-button.play {
+.play button {
   display: inline-block;
   font-family: 'Avenir Next LT Pro Heavy';
   white-space: nowrap;
@@ -272,7 +272,7 @@ button.play {
   padding: 1em 2em;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 12px;
   z-index: 1;
 }
 
@@ -282,7 +282,7 @@ button.play {
   margin-left: auto;
   margin-right: auto;
   padding-top: 30%;
-  padding-left: 43%
+  padding-left: 40%
 }
 
 @media (min-width: 900px) {

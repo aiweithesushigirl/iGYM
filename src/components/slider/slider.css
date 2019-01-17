@@ -10,12 +10,11 @@
   margin-right: auto;
   max-width: 100%;
   height: auto;
-  padding-bottom: 10vh
+  padding-bottom: 30%
 }
 
 p.thick {
   font-family: 'Avenir Next LT Pro Heavy';
-  /* font-size: 30px; */
   font-weight: 900;
 }
 
