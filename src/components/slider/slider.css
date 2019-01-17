@@ -8,13 +8,30 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 75%;
+  max-width: 100%;
   height: auto;
-  padding-bottom: 250px
+  padding-bottom: 10vh
 }
 
 p.thick {
-  font-family: "Avenir Next Bold";
-  font-size: 60px;
+  font-family: 'Avenir Next LT Pro Heavy';
+  /* font-size: 30px; */
   font-weight: 900;
+}
+
+@media (min-width: 900px) {
+  .caption {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75%;
+    height: auto;
+    padding-bottom: 18em
+  }
+
+  p.thick {
+    font-family: 'Avenir Next LT Pro Heavy';
+    font-size: 60px;
+    font-weight: 900;
+  }
 }

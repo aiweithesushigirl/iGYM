@@ -54,7 +54,8 @@ class App extends Component {
 		const { value } = this.state;
 		return (
 			<div className="App">
-				<nav className={this.state.scroll > this.state.top ? 'fixed-nav' : ''}>
+				<nav className={this.state.scroll > this.state.top ? 'fixed-nav' : '"navbar navbar-expand-lg'}>
+    
 					<button
 						className="testing"
 						label="iGYM"
@@ -70,7 +71,8 @@ class App extends Component {
 							iGYM
 						</i>
 					</button>
-
+      
+            <div className="link">
 					<button
 						label="About"
 						value="About"
@@ -107,6 +109,7 @@ class App extends Component {
 					>
 						Contact
 					</button>
+          </div>
 				</nav>
 
 				<div className="section header-section">

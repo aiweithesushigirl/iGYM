@@ -1,4 +1,4 @@
-img {
+.team-photo img {
     max-width: 100%;
     height: auto;
 }
@@ -6,12 +6,15 @@ img {
 .teams {
     margin: auto;
     max-width: 75%;
-    font-family: "Avenir Next";
+    font-family: 'Avenir LT Std 45 Book';
 
 }
+
 b {
-    font-family: "Avenir Next Bold"; 
+    font-size: 20px;
+    font-family: 'Avenir LT Std 85 Heavy';
 }
+
 .team-photo {
     max-width: 800px;
     margin: auto;
@@ -19,11 +22,12 @@ b {
 }
 
 .text-center {
+    padding-top: 5%;
     max-width: 800px;
 }
 
 .faculty {
-    width: 50%
+    width: 40%
 }
 
 .student {
@@ -37,6 +41,8 @@ b {
 @media (min-width: 900px) {
     .teams {
         display: flex;
+        align-items: flex-start;
         justify-content: space-between;
     }
+
 }

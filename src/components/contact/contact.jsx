@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import TextField from '@material-ui/core/TextField';
 import isEmail from 'validator/lib/isEmail';
-import LinearProgress from '@material-ui/core/LinearProgress';
+import { FormGroup, ControlLabel, FormControl, HelpBlock, FieldGroup } from 'react-bootstrap';
 import './contact.css';
 
 class ContactComponent extends Component {
@@ -19,8 +19,6 @@ class ContactComponent extends Component {
 	}
 
 	async componentDidMount() {}
-
-	componentWillUnmount() {}
 
 	validateString(str) {
 		if (!str || str < 1) return false;
@@ -90,7 +88,7 @@ class ContactComponent extends Component {
 						/>
 					</div>
 					<div className="recruit-form">
-						<h1 className="h1">Play with us</h1>
+						<h1 className="align-left">Play with us</h1>
 						<p className="second-text">
 							We are looking for playtesters to try our prototype. Please fill out the form if you are
 							interested and we will follow up with more details soon.
@@ -101,14 +99,17 @@ class ContactComponent extends Component {
 							method="POST"
 							id="mG61Hd"
 						>
-							Name:<br />
-							<TextField type="text" name="entry.1464806371" />
+						
+							<input type="text" id="name" name="entry.1464806371" placeholder="Full Name" />
 							<br />
-							Email:<br />
-							<TextField type="text" name="entry.1269394426" />
+						
+							<input type="text" id="email" name="entry.1269394426" placeholder="Email Address" />
 							<br />
-							Message:<br />
-							<TextField type="text" name="entry.423682773" />
+						
+							<input type="text" id="phone" name="entry.998788472" placeholder="Phone Number" />
+							<br />
+					
+							<input type="text" id="message" name="entry.423682773" placeholder="Message" />
 							<br />
 							<input type="submit" value="Submit" id="contained-button-file" />
 						</form>

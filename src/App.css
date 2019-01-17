@@ -1,34 +1,142 @@
 /*
   Color palette: http://www.colourlovers.com/palette/809495/sure
  */
+@font-face {
+  font-family: 'Avenir Next LT Pro Ultra Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next LT Pro Ultra Light'), url('AvenirNextLTPro-UltLt.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Avenir Next LT Pro Ultra Light Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next LT Pro Ultra Light Italic'), url('AvenirNextLTPro-UltLtIt.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Avenir Next LT Pro Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next LT Pro Heavy'), url('AvenirNextLTPro-Heavy.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Avenir Next LT Pro Heavy Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next LT Pro Heavy Italic'), url('AvenirNextLTPro-HeavyIt.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Avenir LT Std 55 Roman';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 55 Roman'), url('AvenirLTStd-Roman.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Avenir LT Std 55 Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 55 Oblique'), url('AvenirLTStd-Oblique.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Avenir LT Std 35 Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 35 Light'), url('AvenirLTStd-Light.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Avenir LT Std 35 Light Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 35 Light Oblique'), url('AvenirLTStd-LightOblique.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Avenir LT Std 45 Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 45 Book'), url('AvenirLTStd-Book.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Avenir LT Std 45 Book Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 45 Book Oblique'), url('AvenirLTStd-BookOblique.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Avenir LT Std 65 Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 65 Medium'), url('AvenirLTStd-Medium.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Avenir LT Std 65 Medium Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 65 Medium Oblique'), url('AvenirLTStd-MediumOblique.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Avenir LT Std 85 Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 85 Heavy'), url('AvenirLTStd-Heavy.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Avenir LT Std 85 Heavy Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 85 Heavy Oblique'), url('AvenirLTStd-HeavyOblique.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Avenir LT Std 95 Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 95 Black'), url('AvenirLTStd-Black.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Avenir LT Std 95 Black Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 95 Black Oblique'), url('AvenirLTStd-BlackOblique.woff') format('woff');
+    }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Avenir Next Bold';
-  color: #212121 !important;
+  font-family: 'Avenir LT Std 45 Book';
+  color:grey !important;
   overflow-x: hidden;
 }
 
-@font-face {
-  font-family: "Avenir Next";
-  src: url("//db.onlinewebfonts.com/t/f3df85918e3f1ba8a7b13be9b47882ce.eot");
-  src: url("//db.onlinewebfonts.com/t/f3df85918e3f1ba8a7b13be9b47882ce.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/f3df85918e3f1ba8a7b13be9b47882ce.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/f3df85918e3f1ba8a7b13be9b47882ce.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/f3df85918e3f1ba8a7b13be9b47882ce.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/f3df85918e3f1ba8a7b13be9b47882ce.svg#Avenir Next") format("svg");
-}
-
-@font-face {
-  font-family: 'Avenir Next Bold';
-  font-weight: bolder;
-  font-style: normal;
-  font-variant:normal;
-  src: url('/Users/wuaiwei/Desktop/personal-portfolio/src/static/font/AvenirNextLTPro-Bold.otf') format('otf')
-}
-
 .h1 {
+  font-family: 'Avenir LT Std 85 Heavy';
   color: #00a3ff;
   text-align: center;
   font-weight: 900
@@ -39,16 +147,17 @@ h3 {
 }
 
 h6 {
-  font-weight: 500;
+  font-weight: 200;
 }
 
 p,
 span {
+  font-size: 20px;
   font-weight: 300;
 }
 
-p {
-  font-family: "Avenir Next";
+p .thick {
+  font-family: 'Avenir LT Std 65 Medium';
   font-weight: 500;
   font-size: 20px;
   margin-top: 20px;
@@ -80,9 +189,8 @@ p {
 }
 
 .section-container.header-component {
-  height: 900px;
+  height: 65vh;
   clear: both;
-
 }
 
 .section-container.footer-component {
@@ -108,15 +216,6 @@ p.headline {
 }
 
 
-p.text-justify {
-  text-align: justify;
-}
-
-p.text-center {
-  text-align: center;
-}
-
-
 nav {
   width: 100%;
   margin: 0;
@@ -139,6 +238,7 @@ nav {
 }
 
 button {
+  font-family: 'Avenir Next LT Pro Heavy';
   flex: 1;
   border: none;
   outline: none;
@@ -150,25 +250,28 @@ button {
   padding: 10px;
   transition: all 0.3s ease-in;
   cursor: pointer;
+  border-radius: 4px;
 }
+
 
 button.testing {
   flex: 0.5;
-  font-family: 'Avenir Next Bold';
+  font-family: 'Avenir Next LT Pro Heavy';
   outline: none;
-
+  text-align: left
 }
 
 button.play {
+  display: inline-block;
+  font-family: 'Avenir Next LT Pro Heavy';
   white-space: nowrap;
   background-color: #00a3ff;
   border: none;
   outline: none;
   color: white;
-  padding: 15px 60px;
+  padding: 1em 2em;
   text-align: center;
   text-decoration: none;
-  display: flex;
   font-size: 16px;
   z-index: 1;
 }
@@ -178,6 +281,32 @@ button.play {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 600px;
+  padding-top: 30%;
   padding-left: 43%
+}
+
+@media (min-width: 900px) {
+  .section-container.header-component {
+    height: 900px;
+    clear: both;
+  }
+
+  button.play {
+    padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    z-index: 1;
+  }
+
+  .play {
+    margin: 1em auto;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 600px;
+    padding-left: 43%
+  }
+
 }

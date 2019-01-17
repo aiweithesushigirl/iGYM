@@ -1,6 +1,6 @@
 .introduction {
   text-align: center;
-  display: inline-block;
+
   margin: auto;
 }
 
@@ -10,7 +10,7 @@
   margin-right: auto;
   max-width: 75%;
   height: auto;
-  padding-bottom: 100px
+  padding-bottom: 2em
 }
 
 .intro-text {
@@ -18,12 +18,37 @@
   margin-left: auto;
   margin-right: auto;
   height: auto;
-  width: 800px
 }
 
-.video {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
+@media (min-width: 900px) {
+  .title {
+    font-family: 'Avenir LT Std 85 Heavy';
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: auto;
+    padding-bottom: 100px
+  }
+
+  .intro-text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 800px;
+    padding-top: 5%;
+    padding-bottom: 5%
+  }
+
+  .embed-responsive {
+    padding-top: 0%;
+    display: inline-block;
+    width: 800px;
+  }
+
+  .embed-responsive-16by9 {
+    padding-bottom: 30%
+  }
+
 }

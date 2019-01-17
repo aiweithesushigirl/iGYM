@@ -1,12 +1,3 @@
-.text-field {
-  width: 100%;
-}
-
-.contact-btn {
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
 .error-message {
   border-left: 5px solid #A80202;
 }
@@ -34,35 +25,38 @@ input[type=submit] {
 }
 
 .form-box {
-
   display: flex;
-  padding-top: 50px
+  flex-wrap: wrap;
 }
 
-.image {
-  flex: 1
-}
+.image {}
 
 .recruit-form {
-  flex: 1;
-  text-align: center;
+
+  width: 100%;
+  text-align: left;
   background-color: #f7f7f7;
-  padding-top: 20px
 }
 
 .recruit-text {
   margin: auto;
   padding: 50px;
-  align-content: center
+  align-content: left
 }
 
 .headline {
   text-align: center;
 }
 
-.second-text {
+.align-left,
+.second-text,
+form {
   margin: 30px;
-  text-align: center;
+  text-align: left;
+}
+
+.align-left {
+  font-family: 'Avenir LT Std 85 Heavy';
 }
 
 h4 {
@@ -71,5 +65,52 @@ h4 {
 }
 
 form {
-  padding: 10px
+  text-align: left
+}
+
+input[type=text] {
+  width: 75%;
+  padding: 6px 15px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.image img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+}
+
+#message {
+  padding: 50px 15px;
+}
+
+
+
+@media (min-width: 900px) {
+  .form-box {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch
+  }
+
+  .image {
+    width: 50%;
+
+  }
+
+  .image img {
+    max-width: unset;
+    max-height: 550px
+  }
+
+  .recruit-form {
+    width: 50%;
+    text-align: left;
+    background-color: #f7f7f7;
+  }
 }
