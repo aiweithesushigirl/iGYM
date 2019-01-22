@@ -37,6 +37,15 @@ class TeamComponent extends Component {
 								<br /> 
 							</h3>
 							College of Enginerring{' '}
+
+							<br />
+							<h3>
+								<a href="https://www.si.umich.edu/people/michael-nebeling">
+									<b>Michael Nebeling</b>
+								</a>
+								<br /> 
+							</h3>
+							Stamps School and School of Information{' '}
 					
 							<br />
 							<h3>
@@ -56,6 +65,8 @@ class TeamComponent extends Component {
 							<br />
 							<li>Emma Shpiz</li>
 							<li>Zixuan Li</li>
+							<li>Pallavi Benawri</li>
+							<li>Amy E. Whitesall</li>
 							<li>Dashiell Carichner</li>
 						</ul>
 						<br />
