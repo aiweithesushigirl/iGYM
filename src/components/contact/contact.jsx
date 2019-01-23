@@ -76,7 +76,7 @@ class ContactComponent extends Component {
 				<h1 className="h1">Contact</h1>
 				<div className="recuit-text">
 					<p align="center">
-						Please <b>email us</b> if you are interested to learn more about iGYM or sign up below for one
+						Please <a href="mailto:helloigym@umich.edu?subject=subject&cc=rolgraf@umich.edu">email us</a> if you are interested to learn more about iGYM or sign up below for one
 						of our next playtests.
 					</p>
 				</div>

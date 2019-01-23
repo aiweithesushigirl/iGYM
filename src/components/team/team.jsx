@@ -45,7 +45,7 @@ class TeamComponent extends Component {
 								</a>
 								<br /> 
 							</h3>
-							Stamps School and School of Information{' '}
+							School of Information{' '}
 					
 							<br />
 							<h3>
@@ -60,7 +60,7 @@ class TeamComponent extends Component {
 					<div className="student">
 						<ul style={{ listStyleType: 'none' }}>
 							<h3>
-								<b>Current Students</b>
+								<b>Research Assistants</b>
 							</h3>
 							<br />
 							<li>Emma Shpiz</li>
@@ -72,7 +72,7 @@ class TeamComponent extends Component {
 						<br />
 						<ul style={{ listStyleType: 'none' }}>
 							<h3>
-								<b>Former Students</b>
+								<b>Alumni</b>
 							</h3>
 							<br />
 							<li>Megan Freund</li>
