@@ -31,8 +31,9 @@ class TeamComponent extends Component {
 					
 							<br />
 							<h3>
-								<a href="https://stamps.umich.edu/people/detail/sun_young_park">
-									<b>Sun Young Park</b>
+								
+								<a href=" https://kim.engin.umich.edu/">
+									<b>Hun Seok Kim</b>
 								</a>
 								<br /> 
 							</h3>
@@ -49,9 +50,10 @@ class TeamComponent extends Component {
 					
 							<br />
 							<h3>
-								<a href=" https://kim.engin.umich.edu/">
-									<b>Hun Seok Kim</b>
+							<a href="https://stamps.umich.edu/people/detail/sun_young_park">
+									<b>Sun Young Park</b>
 								</a>
+								
 								<br /> 
 							</h3>
 							Stamps School and School of Information{' '}
@@ -63,11 +65,12 @@ class TeamComponent extends Component {
 								<b>Research Assistants</b>
 							</h3>
 							<br />
-							<li>Emma Shpiz</li>
 							<li>Zixuan Li</li>
 							<li>Pallavi Benawri</li>
 							<li>Amy E. Whitesall</li>
 							<li>Dashiell Carichner</li>
+							<li>Emma Shpiz</li>
+		
 						</ul>
 						<br />
 						<ul style={{ listStyleType: 'none' }}>
