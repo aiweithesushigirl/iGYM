@@ -1,7 +1,6 @@
 import React from 'react';
 import './slider.css';
 import { Carousel } from 'react-bootstrap';
-import scrollToComponent from 'react-scroll-to-component';
 
 class Slider extends React.Component {
 	constructor(props, context) {
@@ -26,7 +25,7 @@ class Slider extends React.Component {
 		const { index, direction } = this.state;
 
 		return (
-			<Carousel activeIndex={index} direction={direction} onSelect={this.handleSelect}>
+			<Carousel direction={direction} onSelect={this.handleSelect} interval={3000}>
 				<Carousel.Item>
 					<Carousel.Caption>
 						<div className="caption">
