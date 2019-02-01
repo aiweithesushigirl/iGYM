@@ -37,7 +37,7 @@ class TeamComponent extends Component {
 								</a>
 								<br /> 
 							</h3>
-							College of Enginerring{' '}
+							College of Engineering{' '}
 
 							<br />
 							<h3>
