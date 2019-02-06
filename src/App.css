@@ -232,6 +232,7 @@ nav {
 
 .fixed-nav {
   background: black;
+  opacity: 0.75;
   text-decoration: none;
   position: fixed;
   color: #f7f7f7
